@@ -13,6 +13,6 @@ Here are some of the technical writing projects I've worked on recently:
 
 [Connect GitHub Pages to Your Namecheap Domain](https://dev.to/pauljwil/connect-github-pages-to-your-namecheap-domain-4gjj)
 
-This is an example of the writing I did while I was a graduate student in philosophy:
+This is an example of the writing I did while I was a graduate student in philosophy. It's a book review:
 
 [*Classical Indian Philosophy of Induction: The Nyāya Viewpoint* by Kisor Kumar Chakrabarti](/assets/pdfs/paul-williams-writing-sample-book-review.pdf)
