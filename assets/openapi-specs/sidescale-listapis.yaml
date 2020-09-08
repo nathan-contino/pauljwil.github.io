@@ -1,0 +1,131 @@
+openapi: 3.0.0
+info:
+  title: Sidescale API
+  version: '1.0'
+  description: Primary API for interacting with all relevant Apache CloudStack API endpoints.
+  contact:
+    email: hello@sidescale.com
+    url: sidescale.com
+    name: Support
+  termsOfService: 'https://sidescale.com/legal/terms/'
+servers:
+  - url: 'https://sidescale.com/client'
+paths:
+  /api:
+    get:
+      summary: List APIs
+      tags:
+        - API Discovery
+      operationId: listApis
+      description: 'Lists all available APIs on the server, provided by the API Discovery plugin'
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: name
+          description: API name
+      responses:
+        '200':
+          description: OK
+          headers: {}
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  type:
+                    type: string
+                    description: Response field type
+                  jobstatus:
+                    type: integer
+                    description: The current status of the latest async job acting on this object
+                  response:
+                    type: object
+                    description: API response fields
+                    properties:
+                      name:
+                        type: string
+                        description: The name of the API response field
+                      response:
+                        type: object
+                        description: API response fields
+                      type:
+                        type: string
+                        description: Response field type
+                      description:
+                        type: string
+                        description: Description of the API response field
+                  isasync:
+                    type: boolean
+                    description: True if API is asynchronous
+                  related:
+                    type: string
+                    description: Comma separated related APIs
+                  name:
+                    type: string
+                    description: The name of the API command
+                    example: listApis
+                  params:
+                    type: object
+                    description: The list params the API accepts
+                    properties:
+                      required:
+                        type: boolean
+                        description: True if this parameter is required for the API request
+                      since:
+                        type: string
+                        description: Version of CloudStack the API was introduced in
+                      length:
+                        type: integer
+                        description: Length of the parameter
+                      description:
+                        type: string
+                        description: Description of the API parameter
+                      type:
+                        type: string
+                        description: Parameter type
+                      name:
+                        type: string
+                        description: The name of the API parameter
+                      related:
+                        type: string
+                        description: Comma separated related APIs to get the parameter
+                  description:
+                    type: string
+                    description: Description of the API
+                    example: 'lists all available apis on the server, provided by the Api Discovery plugin'
+                  since:
+                    type: string
+                    description: Version of CloudStack the API was introduced in
+                  jobid:
+                    type: string
+                    description: The UUID of the latest async job acting on this object
+              examples:
+                example-1:
+                  value:
+                    type: string
+                    jobstatus: 0
+                    response:
+                      name: string
+                      response: {}
+                      type: string
+                      description: string
+                    isasync: true
+                    related: string
+                    name: listApis
+                    params:
+                      required: true
+                      since: string
+                      length: 0
+                      description: string
+                      type: string
+                      name: string
+                      related: string
+                    description: 'lists all available apis on the server, provided by the Api Discovery plugin'
+                    since: string
+                    jobid: string
+components:
+  schemas: {}
+  securitySchemes: {}
+tags:
+  - name: API Discovery
