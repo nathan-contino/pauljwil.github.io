@@ -13,17 +13,9 @@ servers:
 paths:
   /api:
     get:
-      summary: List APIs
+      summary: listHypervisors
       tags:
-        - API Discovery
-      operationId: listApis
-      description: 'Lists all available APIs on the server, provided by the API Discovery plugin'
-      parameters:
-        - schema:
-            type: string
-          in: query
-          name: name
-          description: API name
+        - Hypervisor
       responses:
         '200':
           description: OK
@@ -33,99 +25,29 @@ paths:
               schema:
                 type: object
                 properties:
-                  type:
-                    type: string
-                    description: Response field type
-                  jobstatus:
-                    type: integer
-                    description: The current status of the latest async job acting on this object
-                  response:
-                    type: object
-                    description: API response fields
-                    properties:
-                      name:
-                        type: string
-                        description: The name of the API response field
-                      response:
-                        type: object
-                        description: API response fields
-                      type:
-                        type: string
-                        description: Response field type
-                      description:
-                        type: string
-                        description: Description of the API response field
-                  isasync:
-                    type: boolean
-                    description: True if API is asynchronous
-                  related:
-                    type: string
-                    description: Comma separated related APIs
-                  name:
-                    type: string
-                    description: The name of the API command
-                    example: listApis
-                  params:
-                    type: object
-                    description: The list params the API accepts
-                    properties:
-                      required:
-                        type: boolean
-                        description: True if this parameter is required for the API request
-                      since:
-                        type: string
-                        description: Version of CloudStack the API was introduced in
-                      length:
-                        type: integer
-                        description: Length of the parameter
-                      description:
-                        type: string
-                        description: Description of the API parameter
-                      type:
-                        type: string
-                        description: Parameter type
-                      name:
-                        type: string
-                        description: The name of the API parameter
-                      related:
-                        type: string
-                        description: Comma separated related APIs to get the parameter
-                  description:
-                    type: string
-                    description: Description of the API
-                    example: 'lists all available apis on the server, provided by the Api Discovery plugin'
-                  since:
-                    type: string
-                    description: Version of CloudStack the API was introduced in
                   jobid:
                     type: string
-                    description: The UUID of the latest async job acting on this object
-              examples:
-                example-1:
-                  value:
+                    description: the UUID of the latest async job acting on this object
+                  name:
                     type: string
-                    jobstatus: 0
-                    response:
-                      name: string
-                      response: {}
-                      type: string
-                      description: string
-                    isasync: true
-                    related: string
-                    name: listApis
-                    params:
-                      required: true
-                      since: string
-                      length: 0
-                      description: string
-                      type: string
-                      name: string
-                      related: string
-                    description: 'lists all available apis on the server, provided by the Api Discovery plugin'
-                    since: string
-                    jobid: string
+                    description: Hypervisor name
+                  jobstatus:
+                    type: string
+                    description: The current status of the latest async job acting on this object
+              examples:
+                Example:
+                  value:
+                    name: Hyperv
+      operationId: listHypervisors
+      description: List hypervisors
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: zoneid
+          description: The zone id for listing hypervisors
 components:
   schemas: {}
   securitySchemes: {}
 tags:
-  - name: API Discovery
+  - name: Hypervisor
