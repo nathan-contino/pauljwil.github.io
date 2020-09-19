@@ -27,4 +27,4 @@ These three tutorials explain relatively simple technical tasks and are intended
 
 ### [*Classical Indian Philosophy of Induction: The Nyāya Viewpoint* by Kisor Kumar Chakrabarti](/assets/pdfs/paul-williams-writing-sample-book-review.pdf)
 
-This is an example of the writing I did while I was a graduate student in philosophy. It's a book review. Finally, this is an example of my writing intended for an academic audience.
+This is an example of the writing I did while I was a graduate student in philosophy. It's a book review. This is an example of my writing intended for an academic audience.
