@@ -11,7 +11,7 @@ This page includes samples of my technical and academic writing for developer, e
 
 ### [Sidescale API](../sidescale-api)
 
-[Sidescale](https://sidescale.com) is a cloud services platform which makes use of the Apache CloudStack API. I am currently building conceptual and reference documentation for their implementation of 253 of the CloudStack API requests. The following links to a working draft of that documentation. This is an example of my writing intended for a developer audience.
+[Sidescale](https://sidescale.com) is a cloud services platform which makes use of the Apache CloudStack API. I am currently building conceptual and reference documentation for their implementation of 253 of the CloudStack API requests. The above links to a working draft of that documentation. This is an example of my writing intended for a developer audience.
 
 ## Tutorials
 
