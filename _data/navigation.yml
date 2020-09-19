@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Projects"
-    url: /projects/
+  - title: "Writing Samples"
+    url: /writing-samples/
   - title: "About"
     url: /about/
   # - title: "Quick-Start Guide"
