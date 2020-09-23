@@ -1,13 +1,13 @@
 ---
 layout: single
-title: Writing samples
+title: Writing Samples
 permalink: /writing-samples/
 author_profile: true
 ---
 
 This page includes samples of my technical and academic writing for developer, end user, and academic audiences.
 
-## API documentation
+## API Documentation
 
 ### [Sidescale API](../sidescale-api)
 
@@ -15,15 +15,15 @@ This page includes samples of my technical and academic writing for developer, e
 
 ## Tutorials
 
-### [Basic Markdown tutorial](https://dev.to/pauljwil/basic-markdown-tutorial-1bof)
+### [Basic Markdown Tutorial](https://dev.to/pauljwil/basic-markdown-tutorial-1bof)
 
-### [Link to CSS and JavaScript in an HTML file](https://dev.to/pauljwil/linking-to-css-and-javascript-in-an-html-file-306m)
+### [Link to CSS and JavaScript in an HTML File](https://dev.to/pauljwil/linking-to-css-and-javascript-in-an-html-file-306m)
 
-### [Connect GitHub Pages to your Namecheap domain](https://dev.to/pauljwil/connect-github-pages-to-your-namecheap-domain-4gjj)
+### [Connect GitHub Pages to Your Namecheap Domain](https://dev.to/pauljwil/connect-github-pages-to-your-namecheap-domain-4gjj)
 
 These three tutorials explain relatively simple technical tasks and are intended to give you a sense of how I write for end users.
 
-## Academic writing
+## Academic Writing
 
 ### [*Classical Indian Philosophy of Induction: The Nyāya Viewpoint* by Kisor Kumar Chakrabarti](/assets/pdfs/paul-williams-writing-sample-book-review.pdf)
 
