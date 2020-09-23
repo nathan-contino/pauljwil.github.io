@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Writing Samples
+title: Writing samples
 permalink: /writing-samples/
 author_profile: true
 ---
