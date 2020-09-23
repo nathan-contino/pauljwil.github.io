@@ -95,7 +95,7 @@ analytics:
 author:
   name             :
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "My technical writing portfolio site."
+  bio              : "My technical writing portfolio site"
   location         : "Portland, OR"
   email            :
   links:
